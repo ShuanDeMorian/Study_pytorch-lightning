@@ -1,0 +1,21 @@
+# path to original working directory
+# hydra hijacks working directory by changing it to the current log directory,
+# so it's useful to have this path as a special variable
+# learn more here: https://hydra.cc/docs/next/tutorials/basic/running_your_app/working_directory
+work_dir: ${hydra:runtime.cwd}
+
+# path to folder with data
+data_dir: ${work_dir}/data
+
+seed: 1234
+
+max_epochs: 20
+batch_size: 100
+lr: 1e-3 # 1e-2
+swa: True # stochastic weight average
+auto_lr: True # auto learning rate find
+
+hidden_size: 64
+dropout_rate: 0.1
+model_type: 'cnn'
+optim: 'adam'
