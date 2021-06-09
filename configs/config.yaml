@@ -11,6 +11,7 @@ seed: 1234
 
 max_epochs: 20
 batch_size: 100
+pin_memory: True
 lr: 1e-3 # 1e-2
 swa: True # stochastic weight average
 auto_lr: True # auto learning rate find

@@ -25,6 +25,7 @@ pip install pytorch-lightning
 
 ## 7 Tips To Maximize PyTorch Performance
 출처 : https://towardsdatascience.com/7-tips-for-squeezing-maximum-performance-from-pytorch-ca4a40951259
+참고 필요 : https://pytorch-lightning.readthedocs.io/en/latest/benchmarking/performance.html
 1. Use workers in DataLoaders
     ```python
     DataLoader(dataset, num_workers=8)

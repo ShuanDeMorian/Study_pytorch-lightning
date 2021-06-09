@@ -1,0 +1,15 @@
+work_dir: ${hydra:runtime.cwd}
+data_dir: ${work_dir}/data
+seed: 1234
+max_epochs: 20
+batch_size: 100
+pin_memory: true
+lr: 0.001
+swa: true
+auto_lr: true
+hidden_size: 64
+dropout_rate: 0.1
+model_type: cnn
+optim: adam
+
+checkpoint: outputs/2021-06-09/13-07-41/lightning_logs/version_0/checkpoints/epoch=6-val_acc=0.99440.ckpt
